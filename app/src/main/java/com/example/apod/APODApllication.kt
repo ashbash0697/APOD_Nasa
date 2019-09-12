@@ -7,10 +7,15 @@ import com.example.apod.di.modules.AppModule
 import dagger.internal.DaggerCollections
 import net.danlew.android.joda.JodaTimeAndroid
 
-class APODApllication: Application(){
+public class APODApllication: Application(){
     /*val apodComponent: ApodComponent by lazy {
 
     }*/
+
+    companion object{
+        lateinit var apodApllication: APODApllication
+        private set
+    }
 
     val apodComponent : ApodComponent by lazy {
        DaggerApodComponent.builder()
@@ -19,8 +24,11 @@ class APODApllication: Application(){
     }
 
 
+
+
     override fun onCreate() {
         super.onCreate()
+        apodApllication = this
         JodaTimeAndroid.init(this)
     }
 }
