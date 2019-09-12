@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/apodDtlImage"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"/>
+
+        <TextView
+                android:id="@+id/apodTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/apodDtlImage"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="26sp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+                android:id="@+id/apodDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/apodTitle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+        />
+
+        <TextView
+                android:id="@+id/apodDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/apodDesc"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="1234"
+        />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
